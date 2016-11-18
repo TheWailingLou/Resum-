@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  $('h1').click(function(){
-    $(this).fadeOut('fast');
+  $('h1').hover(function(){
+    $(this).addClass('item_hover');
+  },
+  function(){
+    $(this).removeClass('item_hover');
   });
 });
