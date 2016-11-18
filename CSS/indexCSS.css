@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  border: 1px solid #000;
+}
+
+#Background {
+  background: url("../Images/DragonsPoint.JPG");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Headers {
+  align-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  background-color: rgba(0,255,0,0.2);
+  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+
+}
+a {
+  background-color: rgba(0,0,255,0.2);
+  padding: 0;
+  margin: 10px;
+  display:inline-block;
+}
