@@ -2,20 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing:border-box;
-  border: 1px solid #000;
 }
 
+
 #Background {
+
   background: url("../Images/YellowstoneFalls.JPG");
   background-position: left;
+  position:absolute;
+  width:100%;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+a {
+  border: 1px solid #000;
+  display: inline-block;
+}
+
 .Headers {
+  border: 10px solid #000;
+  border-left: 0;
+  border-right: 0;
+  width: 100%;
+  position: fixed;
   text-align: center;
-  border: none;
   background-color: rgba(0, 0, 0, .2);
 }
 
@@ -27,15 +40,17 @@ h1 {
   background-color: rgba(255,100,0,0.2);
   color: #FFF;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "Exo", cursive;
+  text-transform: uppercase;
   text-align: center;
   width: 120px;
   height: 50px;
   border: 1px solid rgba(0,0,0,0.2);
-  border-radius: 0%;
+  border-radius: 5%;
 }
 
-a {
+.headerLink {
   padding: 0;
   margin: 10px;
   display:inline-block;
@@ -52,6 +67,68 @@ a {
   border-radius: 5%;
 }
 
-p {
-  margin: 50% 0 50%
+.WorkExp {
+  background-color: rgba(0,0,0,.5);
+  display: block;
+  width: auto;
+  height: auto;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+.WkExImg {
+  display: inline-block;
+  width: 150px;
+  border-radius: 10%;
+}
+
+.WkExImgL {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  border-radius: 10%;
+  margin: 10px 30px 10px 200px;
+
+}
+
+.Content {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #FFF;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 26px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+h5 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.h5hover {
+  color: #DDF;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+li {
+  margin-left: 40px;
+}
+
+ul {
+  margin-bottom: 20px
 }
