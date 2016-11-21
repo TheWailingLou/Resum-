@@ -9,6 +9,16 @@ $(document).ready(function(){
               [0,6,0,0,0,0,2,8,0],
               [0,0,0,4,1,9,0,0,5],
               [0,0,0,0,8,0,0,7,9]];
+  var empty = [
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0]];
 
   var fillValuesIn = function(prePz, n=0){
     var p = n*81
@@ -18,6 +28,8 @@ $(document).ready(function(){
       var cell = prePz[j][j2];
       if (cell !== 0) {
         $('input:eq('+i.toString()+')').val(cell.toString());
+      } else {
+        $('input:eq('+i.toString()+')').val("");
       }
     };
   };
@@ -46,13 +58,7 @@ $(document).ready(function(){
     }
     return arr;
   }
-  /*ar = getValues();
-  for (var i= 0; i <81; i++) {
-    j = Math.floor(i/9);
-    j2 = Math.floor(i%9);
-    console.log(ar[j][j2]);
-  }*/
-
+  
   pz = getValues()
 
   ////////// Here is the code that actually solves
@@ -171,7 +177,15 @@ $(document).ready(function(){
 
   //////////
 
-  ans = sudoku(pz);
+  $('#clear').click(function(){
+    fillValuesIn(empty, 0);
+    fillValuesIn(empty, 1);
+  });
 
-  fillValuesIn(ans, 1);
+  $('#find').click(function(){
+    pz = getValues();
+    ans = sudoku(pz);
+    fillValuesIn(ans, 1);
+  });
+
 });
