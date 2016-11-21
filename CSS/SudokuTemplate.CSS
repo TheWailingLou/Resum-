@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+
+colgroup, tbody {
+  border: solid 2px;
+}
+
+td {
+  border: solid 1px;
+  height: 2em;
+  max-height: 2em;
+  width: 2em;
+  max-width: 2em;
+  text-align: center;
+}
+input {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1em;
+  max-width: "1";
+}
