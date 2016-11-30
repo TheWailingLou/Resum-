@@ -62,7 +62,55 @@ h1 {
   border-radius: 5%;
 }
 
+/*   */
+/*  Sudoku Table styling */
+/*   */
 
-p {
-  margin: 50% 0 50%
+#SudokuTables {
+  margin-top: 10%;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #f00;
+}
+
+.sudokuTable {
+  padding: 10px;
+  display: block;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+
+h4 {
+  display: block;
+  width: 10em;
+  border: 1px solid #000;
+  border-radius: 5%;
+}
+
+table {
+  float: left;
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+colgroup, tbody {
+  border: solid 3px;
+}
+
+td {
+  border: solid 0px;
+  height: 2em;
+  max-height: 2em;
+  width: 2em;
+  max-width: 2em;
+  text-align: center;
+}
+input {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1em;
+  max-width: "1";
 }
